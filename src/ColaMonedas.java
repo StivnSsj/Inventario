@@ -1,28 +1,28 @@
 import java.util.LinkedList;
 
-public class ColaMonedas100 {
+public class ColaMonedas {
     Moneda moneda; 
-    LinkedList<Moneda> ColaMonedas100;
+    LinkedList<Moneda> ColaMonedas;
     int cantidad;
     int disponible;
 
-    public ColaMonedas100(int cantidad) {
-        this.moneda = new Moneda(100);
-        this.ColaMonedas100 = new LinkedList<Moneda>();
+    public ColaMonedas(int cantidad, int valor) {
+        this.moneda = new Moneda(valor);
+        this.ColaMonedas = new LinkedList<Moneda>();
         this.cantidad = cantidad;
         this.disponible = 0;
     }
 
     public void InicializarMonedas() {
         for(int i=0; i<cantidad; i++){
-            ColaMonedas100.addLast(moneda);
+            ColaMonedas.addLast(moneda);
             disponible++;
         }
     }
 
     public void mostrar(){
         System.out.println("Disponibles "+disponible);
-        for(int i=0; i<ColaMonedas100.size(); i++){
+        for(int i=0; i<ColaMonedas.size(); i++){
             System.out.println(+moneda.getValor());
         }
     }

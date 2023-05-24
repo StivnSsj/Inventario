@@ -33,11 +33,11 @@ public class Inventario {
 
         // CREA LAS COLAS DE MONEDAS, CON UNA CANTTIDAD INICIALIZADA POR EL PROGRAMADOR
 
-        ColaMonedas100 cola100 = new ColaMonedas100(5);
-        ColaMonedas200 cola200 = new ColaMonedas200(10);
-        ColaMonedas500 cola500 = new ColaMonedas500(8);
-        ColaMonedas1000 cola1000 = new ColaMonedas1000(5);
-
+        ColaMonedas cola100 = new ColaMonedas(5,100);
+        ColaMonedas cola200 = new ColaMonedas(7,200);
+        ColaMonedas cola500 = new ColaMonedas(10,500);
+        ColaMonedas cola1000 = new ColaMonedas(8,1000);
+        
         cola100.InicializarMonedas();
         cola100.mostrar();
 
